@@ -4,7 +4,7 @@ echo 'Start STREAM benchmark (Ubuntu)'
 logs="logs/$1/stream/"
 echo "Save logs in $logs"
 # Create directory
-mkdir $logs
+mkdir -p $logs
 
 # Get all stream executables
 executables=$(ls $2)
