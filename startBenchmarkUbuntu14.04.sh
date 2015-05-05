@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # Create unique folder name
 folderName=`date +%Y.%m.%d-%H:%M:%S`
