@@ -1,0 +1,5 @@
+### USAGE
+
+Enter all node ip addresses into the node.list (including the own one). 
+Save the current IP address into the environment variable MY_IP. THe list will be parsed and each time an IP address does not equal the own one the remote side of the netPipe benchmark is started. 
+WHen the IP address equals the own one, the local side of the benchmark is started.
