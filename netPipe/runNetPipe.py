@@ -54,7 +54,8 @@ for ip in nodesList:
 		time.sleep(5)		
 		for entry in pingList:
 			print 'Do best case benchmark with '+str(entry)
-			call(["/bin/bash", "-c","NPtcp -h " +str(entry)+ ' | tee logs/bestCase'+str(entry)+'.log'])
+			while call(["/bin/bash", "-c","NPtcp -h " +str(entry)+ ' | tee logs/bestCase'+str(entry)+'.log']) != 0:
+				print 'Failed... trying again!'
 			print 'Do worst case benchmark with '+str(entry)
                         call(["/bin/bash", "-c","NPtcp -I -h " +str(entry)+ ' | tee logs/worstCase'+str(entry)+'.log'])
 
