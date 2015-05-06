@@ -43,7 +43,8 @@ for ip in nodesList:
 			else:
 				wasMyIP = True
 		# Add last entry to list
-		pingList.append(lastNode)
+		if lasteNode:
+			pingList.append(lastNode)
 		print 'Print ping list'
 		for entry in pingList:
 			print entry
