@@ -11,8 +11,8 @@ Each kernel will be executed 100 times.
  will be used to compute the reported bandwidth.
 -------------------------------------------------------------
 Your clock granularity/precision appears to be 1 microseconds.
-Each test below will take on the order of 15868 microseconds.
-   (= 15868 clock ticks)
+Each test below will take on the order of 15969 microseconds.
+   (= 15969 clock ticks)
 Increase the size of the arrays if this shows that
 you are not getting at least 20 clock ticks per test.
 -------------------------------------------------------------
@@ -21,10 +21,10 @@ For best results, please be sure you know the
 precision of your system timer.
 -------------------------------------------------------------
 Function    Best Rate MB/s  Avg time     Min time     Max time
-Copy:            8120.6     0.021279     0.019703     0.026622
-Scale:           8300.0     0.021098     0.019277     0.026560
-Add:             9122.7     0.028350     0.026308     0.034686
-Triad:           9356.4     0.028648     0.025651     0.034545
+Copy:            8169.6     0.021515     0.019585     0.024711
+Scale:           8298.3     0.021336     0.019281     0.025669
+Add:             9160.6     0.028638     0.026199     0.033029
+Triad:           9103.3     0.029110     0.026364     0.036098
 -------------------------------------------------------------
 Solution Validates: avg error less than 1.000000e-13 on all three arrays
 -------------------------------------------------------------
