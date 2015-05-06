@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import os
 import time
-from subprocess import call
+import subprocess
 
 print 'Start netpipe benchmark'
 
@@ -47,17 +47,36 @@ for ip in nodesList:
 		print 'Print ping list'
 		for entry in pingList:
 			print entry
-		time.sleep(40)
+		time.sleep(4)
 		print 'Start pinging nodes'
 		
 		# A little waiting time is needed
-		time.sleep(5)		
+		#time.sleep(5)		
 		for entry in pingList:
 			print 'Do best case benchmark with '+str(entry)
-			while call(["/bin/bash", "-c","NPtcp -h " +str(entry)+ ' | tee logs/bestCase'+str(entry)+'.log']) != 0:
-				print 'Failed... trying again!'
+			for i in range(1000):
+				output = subprocess.check_output(["/bin/bash", "-c","NPtcp -h " +str(entry)+ ' | tee logs/bestCase'+str(entry)+'.log'])
+				# Always when something goes wrong errno appears in the output
+				if "errno" in output:
+					print 'Execution failed do it again'
+					time.sleep(1)
+				else:
+					# Break loop
+					print 'Benchmark successful... continue.'
+					break
+			
 			print 'Do worst case benchmark with '+str(entry)
-                        call(["/bin/bash", "-c","NPtcp -I -h " +str(entry)+ ' | tee logs/worstCase'+str(entry)+'.log'])
+                        for i in range(1000):
+				output = subprocess.check_output(["/bin/bash", "-c","NPtcp -I -h " +str(entry)+ ' | tee logs/worstCase'+str(entry)+'.log'])
+				 # Always when something goes wrong errno appears in the output
+                                if "errno" in output:
+                                        print 'Execution failed do it again'
+                                        time.sleep(1)
+                                else:
+                                        # Break loop
+                                        print 'Benchmark successful... continue.'
+                                        break
+
 
 
 
