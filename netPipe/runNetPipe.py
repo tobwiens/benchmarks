@@ -83,8 +83,8 @@ for ip in nodesList:
 
 	else:
 		print 'Wait for '+str(ip)+' to connect for best case test.'
-		call(["NPtcp"])
+		subprocess.call(["NPtcp"])
 		print  'Wait for '+str(ip)+' to connect for worst case test.'
-		call(["NPtcp"])
+		subprocess.call(["NPtcp"])
 
 print 'Benchmark done!!!!'
