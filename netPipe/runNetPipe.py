@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+import time
 from subprocess import call
 
 print 'Start netpipe benchmark'
@@ -43,7 +44,7 @@ for ip in nodesList:
 		print 'Print ping list'
 		for entry in pingList:
 			print entry
-		
+		time.sleep(40)
 		print 'Start pinging nodes'
 		
 		for entry in pingList:
