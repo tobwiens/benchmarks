@@ -1,10 +1,10 @@
-benchmark1
+benchmark2
     description: Computer
     product: Bochs ()
     vendor: Bochs
     width: 64 bits
     capabilities: smbios-2.4 dmi-2.4 vsyscall32
-    configuration: boot=normal uuid=CEAE8BE2-6F4E-4AC2-AA87-275D9B860057
+    configuration: boot=normal uuid=9D199B4B-88FA-4819-A65D-A6AABFEF1BCC
   *-core
        description: Motherboard
        physical id: 0
@@ -113,11 +113,11 @@ benchmark1
              bus info: pci@0000:00:03.0
              logical name: eth0
              version: 00
-             serial: 04:01:4e:c2:14:01
+             serial: 04:01:4e:c2:19:01
              width: 32 bits
              clock: 33MHz
              capabilities: msix bus_master cap_list ethernet physical
-             configuration: broadcast=yes driver=virtio_net driverversion=1.0.0 ip=46.101.144.201 latency=0 link=yes multicast=yes
+             configuration: broadcast=yes driver=virtio_net driverversion=1.0.0 ip=46.101.144.147 latency=0 link=yes multicast=yes
              resources: irq:10 ioport:c060(size=32) memory:febf1000-febf1fff
         *-scsi
              description: SCSI storage controller
