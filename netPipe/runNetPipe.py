@@ -50,6 +50,8 @@ for ip in nodesList:
 		time.sleep(40)
 		print 'Start pinging nodes'
 		
+		# A little waiting time is needed
+		time.sleep(5)		
 		for entry in pingList:
 			print 'Do best case benchmark with '+str(entry)
 			call(["/bin/bash", "-c","NPtcp -h " +str(entry)+ ' | tee logs/bestCase'+str(entry)+'.log'])
