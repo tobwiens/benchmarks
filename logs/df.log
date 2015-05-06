@@ -1,0 +1,8 @@
+Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/vda1       20511356 2317096  17129304  12% /
+none                   4       0         4   0% /sys/fs/cgroup
+udev              240048       4    240044   1% /dev
+tmpfs              50180     316     49864   1% /run
+none                5120       0      5120   0% /run/lock
+none              250900       0    250900   0% /run/shm
+none              102400       0    102400   0% /run/user
