@@ -5,7 +5,14 @@ echo 'Clone benchmark repository, ssh key must be configured'
 git clone git@github.com:tobwiens/benchmarks.git
 
 # Install dependencies
-cat benchmarks/installDependencies/sh | sh
+cat benchmarks/installDependencies.sh | sh
 
 echo "Enter save correct IP address in MY_IP environment variable" 
 echo "Make sure that node.list is up to date"
+
+echo "Update git variables"
+
+git --global user.email 'tobwiens@gmail.com'
+git --global user.name 'Benchmark'
+
+git --global push.default simple
