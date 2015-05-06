@@ -26,7 +26,7 @@ stream/runStreamUbuntu14.04.sh $MY_IP  stream/ubuntu14.04x64
 # Start LINPACK benchmark
 
 # Start netPipe
-netPipe/runNetPipe.sh 'netPipe/nodes.list'
+netPipe/runNetPipe.py 
 # Commit logs
 
 # Push logs:wqq
