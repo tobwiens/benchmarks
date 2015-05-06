@@ -12,7 +12,7 @@ echo "Make sure that node.list is up to date"
 
 echo "Update git variables"
 
-git --global user.email 'tobwiens@gmail.com'
-git --global user.name 'Benchmark'
+git config --global user.email 'tobwiens@gmail.com'
+git confg --global user.name 'Benchmark'
 
-git --global push.default simple
+git config --global push.default simple
