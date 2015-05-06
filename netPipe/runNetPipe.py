@@ -31,7 +31,7 @@ for ip in nodesList:
 		print 'Entry in list is my IP'
 		# Create array which stores the order of pinging other nodes
 		pingList = []
-		wasMyIP= False
+		wasMyIP = False
 		for entry in nodesList:
 			# The node after me is necxt, so it will be pinged last
 			if wasMyIP is True:
@@ -40,6 +40,8 @@ for ip in nodesList:
 				continue
 			if entry != MY_IP:
 				pingList.append(entry)
+			else:
+				wasMyIP = True
 		# Add last entry to list
 		pingList.append(lastNode)
 		print 'Print ping list'
