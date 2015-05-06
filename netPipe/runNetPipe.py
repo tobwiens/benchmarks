@@ -40,7 +40,8 @@ for ip in nodesList:
 				continue
 			if entry != MY_IP:
 				pingList.append(entry)
-
+		# Add last entry to list
+		pingList.append(lastNode)
 		print 'Print ping list'
 		for entry in pingList:
 			print entry
