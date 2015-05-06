@@ -13,6 +13,6 @@ echo "Make sure that node.list is up to date"
 echo "Update git variables"
 
 git config --global user.email 'tobwiens@gmail.com'
-git confg --global user.name 'Benchmark'
+git config --global user.name 'Benchmark'
 
 git config --global push.default simple
