@@ -1,10 +1,10 @@
-benchmarkserver
+benchmark2
     description: Computer
     product: Bochs ()
     vendor: Bochs
     width: 64 bits
     capabilities: smbios-2.4 dmi-2.4 vsyscall32
-    configuration: boot=normal uuid=B2248AC5-FE38-45A5-A54C-E65F5F800DE8
+    configuration: boot=normal uuid=9D199B4B-88FA-4819-A65D-A6AABFEF1BCC
   *-core
        description: Motherboard
        physical id: 0
@@ -113,7 +113,7 @@ benchmarkserver
              bus info: pci@0000:00:03.0
              logical name: eth0
              version: 00
-             serial: 04:01:4e:8d:0b:01
+             serial: 04:01:4e:c2:19:01
              width: 32 bits
              clock: 33MHz
              capabilities: msix bus_master cap_list ethernet physical

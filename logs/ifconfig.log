@@ -1,18 +1,18 @@
-eth0      Link encap:Ethernet  HWaddr 04:01:4e:8d:0b:01  
+eth0      Link encap:Ethernet  HWaddr 04:01:4e:c2:19:01  
           inet addr:46.101.144.147  Bcast:46.101.191.255  Mask:255.255.192.0
-          inet6 addr: fe80::601:4eff:fe8d:b01/64 Scope:Link
+          inet6 addr: fe80::601:4eff:fec2:1901/64 Scope:Link
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:3565342 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:1588314 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:5933 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:2704 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
-          RX bytes:3514698387 (3.5 GB)  TX bytes:3346258285 (3.3 GB)
+          RX bytes:7407574 (7.4 MB)  TX bytes:365625 (365.6 KB)
 
 lo        Link encap:Local Loopback  
           inet addr:127.0.0.1  Mask:255.0.0.0
           inet6 addr: ::1/128 Scope:Host
           UP LOOPBACK RUNNING  MTU:65536  Metric:1
-          RX packets:18459677 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:18459677 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:0 
-          RX bytes:189683950704 (189.6 GB)  TX bytes:189683950704 (189.6 GB)
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
 
